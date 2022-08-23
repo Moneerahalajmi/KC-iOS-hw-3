@@ -12,13 +12,14 @@ struct ContentView: View {
        
         ZStack{
             Color.brown
-                .opacity(0.3)
+                .opacity(0.15)
                 .ignoresSafeArea()
             ScrollView{
             VStack{
                 Text("My Expenses")
                     .font(.system(size: 25, weight: .semibold, design: .rounded))
                     .padding()
+                
                  
                 ForEach(items){i in
                     ScrollView{
@@ -42,6 +43,7 @@ struct ContentView: View {
                             
                         
                         }.padding()
+                        
                     }
             }
         }
